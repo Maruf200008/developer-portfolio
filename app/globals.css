@@ -6,3 +6,10 @@
 .swiper-button-next {
   color: #43d9ad;
 }
+
+.swiper-pagination-bullet-active {
+  background: #43d9ad;
+}
+.autoplay-progress > span {
+  display: none;
+}
