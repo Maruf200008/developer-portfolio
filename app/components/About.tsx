@@ -3,8 +3,8 @@ import { css, html, js, python, react } from "../../public/images";
 
 const About = () => {
   return (
-    <div className=" bg-[#011627] text-white ">
-      <div className=" px-10 md:px-24 py-10 ">
+    <div className=" bg-[#011627] text-white  ">
+      <div className=" px-10 md:px-40 py-10 ">
         <div className=" grid md:grid-cols-2 gap-x-20 mt-28">
           <div className=" space-y-5">
             <div className=" mb-14 space-y-4">

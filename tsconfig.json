@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/particles.js"
+    "app/utils/particles.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -13,3 +13,12 @@
 .autoplay-progress > span {
   display: none;
 }
+
+.btn {
+  box-shadow: inset 0 0 0 0 #080808;
+  transition: ease-out 0.4s;
+}
+.btn:hover {
+  box-shadow: inset 300px 0 0 0 #080808;
+  color: #fff;
+}
