@@ -38,7 +38,7 @@ const Navbar = () => {
             {!isOpen ? (
               <GoThreeBars
                 size={30}
-                className=" text-primary"
+                className=" text-primary z-50"
                 onClick={() => setIsOpen(!isOpen)}
               />
             ) : (

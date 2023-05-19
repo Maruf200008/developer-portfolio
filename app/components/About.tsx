@@ -9,7 +9,7 @@ const About = () => {
           <div className=" space-y-5">
             <div className=" mb-14 space-y-4">
               <p className=" uppercase text-2xl font-semibold">About</p>
-              <h2 className=" text-5xl font-semibold text-[#FFB800]">
+              <h2 className=" text-3xl md:text-5xl font-semibold text-[#FFB800]">
                 James Dasher
               </h2>
             </div>

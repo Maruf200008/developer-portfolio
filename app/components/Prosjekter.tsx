@@ -36,24 +36,24 @@ const Prosjekter = () => {
                   consectetur velit. suscipit. Necessitatibus eius consequatur
                   ex aliquid fuga eum quidem. Sit sint consectetur velit.
                 </p>
-                <div className=" flex  items-end gap-x-3">
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                <div className=" flex  items-end gap-x-1 md:gap-x-3 w-full">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Next JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     React JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Python
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     HTML
                   </p>
                 </div>
-                <div className=" flex items-center justify-center md:justify-start  gap-x-4">
+                <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className=" px-16 py-2 border border-primary rounded-md  "
+                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
                   >
                     Demo
                   </Link>
@@ -82,24 +82,24 @@ const Prosjekter = () => {
                   consectetur velit. suscipit. Necessitatibus eius consequatur
                   ex aliquid fuga eum quidem. Sit sint consectetur velit.
                 </p>
-                <div className=" flex  items-end gap-x-3">
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                <div className=" flex  items-end gap-x-1 md:gap-x-3 w-full">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Next JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     React JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Python
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     HTML
                   </p>
                 </div>
-                <div className=" flex items-center justify-center md:justify-start  gap-x-4">
+                <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className=" px-16 py-2 border border-primary rounded-md  "
+                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
                   >
                     Demo
                   </Link>
@@ -128,24 +128,24 @@ const Prosjekter = () => {
                   consectetur velit. suscipit. Necessitatibus eius consequatur
                   ex aliquid fuga eum quidem. Sit sint consectetur velit.
                 </p>
-                <div className=" flex  items-end gap-x-3">
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                <div className=" flex  items-end gap-x-1 md:gap-x-3 w-full">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Next JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     React JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Python
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     HTML
                   </p>
                 </div>
-                <div className=" flex items-center justify-center md:justify-start  gap-x-4">
+                <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className=" px-16 py-2 border border-primary rounded-md  "
+                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
                   >
                     Demo
                   </Link>
@@ -174,24 +174,24 @@ const Prosjekter = () => {
                   consectetur velit. suscipit. Necessitatibus eius consequatur
                   ex aliquid fuga eum quidem. Sit sint consectetur velit.
                 </p>
-                <div className=" flex  items-end gap-x-3">
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                <div className=" flex  items-end gap-x-1 md:gap-x-3 w-full">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Next JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     React JS
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     Python
                   </p>
-                  <p className=" bg-[#23455A] px-5 py-2 rounded-full cursor-pointer">
+                  <p className=" bg-[#23455A] px-3 text-sm md:text-base md:px-5 py-2 rounded-md md:rounded-full cursor-pointer">
                     HTML
                   </p>
                 </div>
-                <div className=" flex items-center justify-center md:justify-start  gap-x-4">
+                <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className=" px-16 py-2 border border-primary rounded-md  "
+                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
                   >
                     Demo
                   </Link>

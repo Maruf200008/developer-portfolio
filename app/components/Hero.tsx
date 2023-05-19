@@ -15,6 +15,7 @@ import { image1, image2, image3, image4 } from "../../public/images";
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from "swiper";
+import ParticleElement from "./ParticleElement";
 let style: number;
 
 const Hero = () => {
@@ -31,6 +32,7 @@ const Hero = () => {
   return (
     <main>
       <div>
+        <ParticleElement />
         <div className=" bg-[#010C15] text-white ">
           <div className=" px-40  text-right py-10 hidden md:block ">
             <Link href="#" className=" underline ">
