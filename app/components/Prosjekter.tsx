@@ -53,15 +53,17 @@ const Prosjekter = () => {
                 <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
+                    className="demoBtn demoBtn1 border-primary px-16  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
                     Demo
                   </Link>
                   <Link
                     href="#"
-                    className=" btn px-3 py-2 bg-white text-black rounded-md flex items-center gap-x-3  "
+                    className="prosjekterBtn prosjekterBtn1 bg-white text-black px-6  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
-                    <AiFillGithub size={25} /> KILDEKODE
+                    {" "}
+                    <AiFillGithub size={25} />
+                    KILDEKODE
                   </Link>
                 </div>
               </div>
@@ -99,15 +101,17 @@ const Prosjekter = () => {
                 <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
+                    className="demoBtn demoBtn1 border-primary px-16  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
                     Demo
                   </Link>
                   <Link
                     href="#"
-                    className=" btn px-3 py-2 bg-white text-black rounded-md flex items-center gap-x-3  "
+                    className="prosjekterBtn prosjekterBtn1 bg-white text-black px-6  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
-                    <AiFillGithub size={25} /> KILDEKODE
+                    {" "}
+                    <AiFillGithub size={25} />
+                    KILDEKODE
                   </Link>
                 </div>
               </div>
@@ -145,15 +149,17 @@ const Prosjekter = () => {
                 <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
+                    className="demoBtn demoBtn1 border-primary px-16  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
                     Demo
                   </Link>
                   <Link
                     href="#"
-                    className=" btn px-3 py-2 bg-white text-black rounded-md flex items-center gap-x-3  "
+                    className="prosjekterBtn prosjekterBtn1 bg-white text-black px-6  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
-                    <AiFillGithub size={25} /> KILDEKODE
+                    {" "}
+                    <AiFillGithub size={25} />
+                    KILDEKODE
                   </Link>
                 </div>
               </div>
@@ -191,15 +197,17 @@ const Prosjekter = () => {
                 <div className=" flex items-center justify-center md:justify-start  gap-x-4 ">
                   <Link
                     href="#"
-                    className="  px-10 md:px-16 py-2 border border-primary rounded-md  "
+                    className="demoBtn demoBtn1 border-primary px-16  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
                     Demo
                   </Link>
                   <Link
                     href="#"
-                    className=" btn px-3 py-2 bg-white text-black rounded-md flex items-center gap-x-3  "
+                    className="prosjekterBtn prosjekterBtn1 bg-white text-black px-6  py-2 rounded-md border-2 gap-x-3  z-10 flex  items-center"
                   >
-                    <AiFillGithub size={25} /> KILDEKODE
+                    {" "}
+                    <AiFillGithub size={25} />
+                    KILDEKODE
                   </Link>
                 </div>
               </div>

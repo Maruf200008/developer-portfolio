@@ -1,306 +1,82 @@
 "use client";
-import { useRef } from "react";
 
-// Import Swiper React components
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
+
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
-import { VscArrowDown } from "react-icons/vsc";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import { image1, image2, image3, image4 } from "../../public/images";
 
-// import required modules
-import { Autoplay, Navigation, Pagination } from "swiper";
-import ParticleElement from "./ParticleElement";
-let style: number;
+import Head from "next/head";
+import { image1 } from "../../public/images";
 
 const Hero = () => {
-  // swiper js slider
-  const progressCircle = useRef(null);
-  const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (time: number, progress: number) => {
-    if (progressCircle.current && progressContent.current !== null && !style) {
-      // progressCircle.current.style.setProperty("--progress", 1 - progress);
-      // progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-    }
-  };
-
   return (
-    <main>
-      <div>
-        <ParticleElement />
-        <div className=" bg-[#010C15] text-white ">
-          <div className=" px-40  text-right py-10 hidden md:block ">
-            <Link href="#" className=" underline ">
-              Download CV
-            </Link>
-          </div>
-          <div className=" md:max-w-[1370px] mx-auto ">
-            <Swiper
-              spaceBetween={30}
-              centeredSlides={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
-              modules={[Autoplay, Pagination, Navigation]}
-              // onAutoplayTimeLeft={onAutoplayTimeLeft}
-              className="mySwiper"
-            >
-              <div className="  ">
-                <SwiperSlide className=" mt-10">
-                  <div className=" flex flex-col  md:flex-row justify-center items-center gap-x-24">
-                    <div className=" hidden md:block">
-                      <Image
-                        src={image1}
-                        alt="image"
-                        className=" rounded-full w-[300px]"
-                      />
-                    </div>
-                    <div className=" flex flex-col gap-y-4">
-                      <p>Hei, Jeg er</p>
-                      <h2 className=" text-[45px] font-semibold">
-                        James Dasher
-                      </h2>
-                      <div className=" flex items-center gap-x-3">
-                        <IoIosArrowForward
-                          size={30}
-                          className=" text-primary"
-                        />
-                        <p className=" text-2xl tracking-widest text-primary">
-                          {" "}
-                          Front-end developer
-                        </p>
-                      </div>
-                      <div className="mt-10 hidden md:block ">
-                        <Link
-                          href="#"
-                          className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                        >
-                          Benjamin
-                        </Link>
-                      </div>
-
-                      <div className=" mt-14 ml-10 hidden md:block">
-                        <VscArrowDown className="animate-bounce w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" mt-20 flex flex-col justify-center items-center md:hidden ">
-                    <Image
-                      src={image1}
-                      alt="image"
-                      className=" rounded-full w-[200px]"
-                    />
-                    <div className="mt-10 ">
-                      <Link
-                        href="#"
-                        className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                      >
-                        Benjamin
-                      </Link>
-                    </div>
-
-                    <div className=" mt-14 ">
-                      <VscArrowDown className="animate-bounce w-8 h-8" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className=" mt-10">
-                  <div className=" flex flex-col  md:flex-row justify-center items-center gap-x-24">
-                    <div className=" hidden md:block">
-                      <Image
-                        src={image2}
-                        alt="image"
-                        className=" rounded-full w-[300px]"
-                      />
-                    </div>
-                    <div className=" flex flex-col gap-y-4">
-                      <p>Hei, Jeg er</p>
-                      <h2 className=" text-[45px] font-semibold">
-                        James Dasher
-                      </h2>
-                      <div className=" flex items-center gap-x-3">
-                        <IoIosArrowForward
-                          size={30}
-                          className=" text-primary"
-                        />
-                        <p className=" text-2xl tracking-widest text-primary">
-                          {" "}
-                          Front-end developer
-                        </p>
-                      </div>
-                      <div className="mt-10 hidden md:block ">
-                        <Link
-                          href="#"
-                          className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                        >
-                          Benjamin
-                        </Link>
-                      </div>
-
-                      <div className=" mt-14 ml-10 hidden md:block">
-                        <VscArrowDown className="animate-bounce w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" mt-20 flex flex-col justify-center items-center md:hidden ">
-                    <Image
-                      src={image2}
-                      alt="image"
-                      className=" rounded-full w-[200px]"
-                    />
-                    <div className="mt-10 ">
-                      <Link
-                        href="#"
-                        className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                      >
-                        Benjamin
-                      </Link>
-                    </div>
-
-                    <div className=" mt-14 ">
-                      <VscArrowDown className="animate-bounce w-8 h-8" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className=" mt-10">
-                  <div className=" flex flex-col  md:flex-row justify-center items-center gap-x-24">
-                    <div className=" hidden md:block">
-                      <Image
-                        src={image3}
-                        alt="image"
-                        className=" rounded-full w-[300px]"
-                      />
-                    </div>
-                    <div className=" flex flex-col gap-y-4">
-                      <p>Hei, Jeg er</p>
-                      <h2 className=" text-[45px] font-semibold">
-                        James Dasher
-                      </h2>
-                      <div className=" flex items-center gap-x-3">
-                        <IoIosArrowForward
-                          size={30}
-                          className=" text-primary"
-                        />
-                        <p className=" text-2xl tracking-widest text-primary">
-                          {" "}
-                          Front-end developer
-                        </p>
-                      </div>
-                      <div className="mt-10 hidden md:block ">
-                        <Link
-                          href="#"
-                          className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                        >
-                          Benjamin
-                        </Link>
-                      </div>
-
-                      <div className=" mt-14 ml-10 hidden md:block">
-                        <VscArrowDown className="animate-bounce w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" mt-20 flex flex-col justify-center items-center md:hidden ">
-                    <Image
-                      src={image3}
-                      alt="image"
-                      className=" rounded-full w-[200px]"
-                    />
-                    <div className="mt-10 ">
-                      <Link
-                        href="#"
-                        className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                      >
-                        Benjamin
-                      </Link>
-                    </div>
-
-                    <div className=" mt-14 ">
-                      <VscArrowDown className="animate-bounce w-8 h-8" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className=" mt-10">
-                  <div className=" flex flex-col  md:flex-row justify-center items-center gap-x-24">
-                    <div className=" hidden md:block">
-                      <Image
-                        src={image4}
-                        alt="image"
-                        className=" rounded-full w-[300px]"
-                      />
-                    </div>
-                    <div className=" flex flex-col gap-y-4">
-                      <p>Hei, Jeg er</p>
-                      <h2 className=" text-[45px] font-semibold">
-                        James Dasher
-                      </h2>
-                      <div className=" flex items-center gap-x-3">
-                        <IoIosArrowForward
-                          size={30}
-                          className=" text-primary"
-                        />
-                        <p className=" text-2xl tracking-widest text-primary">
-                          {" "}
-                          Front-end developer
-                        </p>
-                      </div>
-                      <div className="mt-10 hidden md:block ">
-                        <Link
-                          href="#"
-                          className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                        >
-                          Benjamin
-                        </Link>
-                      </div>
-
-                      <div className=" mt-14 ml-10 hidden md:block">
-                        <VscArrowDown className="animate-bounce w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" mt-20 flex flex-col justify-center items-center md:hidden ">
-                    <Image
-                      src={image4}
-                      alt="image"
-                      className=" rounded-full w-[200px]"
-                    />
-                    <div className="mt-10 ">
-                      <Link
-                        href="#"
-                        className="btn px-12 py-3 bg-white text-black rounded-md text-lg "
-                      >
-                        Benjamin
-                      </Link>
-                    </div>
-
-                    <div className=" mt-14 ">
-                      <VscArrowDown className="animate-bounce w-8 h-8" />
-                    </div>
-                  </div>
-                </SwiperSlide>
+    <div>
+      <Head></Head>
+      <div className=" bg-[#010C15] text-white h-[900px]  md:h-[800px]  ">
+        <div className=" px-40  text-right py-10  hidden md:block ">
+          <Link href="#" className=" underline ">
+            Download CV
+          </Link>
+        </div>
+        <div className=" md:max-w-[1370px]  mx-auto ">
+          <div className=" pt-16 md:pt-0">
+            <div className=" flex flex-col  md:flex-row justify-center items-center gap-x-24">
+              <div className=" hidden md:block">
+                <Image
+                  src={image1}
+                  alt="image"
+                  className=" rounded-full w-[300px]"
+                />
               </div>
+              <div className=" flex flex-col gap-y-2 ">
+                <p>Hei, Jeg er</p>
+                <h2 className=" text-[45px] font-semibold">James Dasher</h2>
+                <div className=" flex items-center gap-x-3">
+                  <IoIosArrowForward size={30} className=" text-primary" />
+                  <div className="input-wrapper">
+                    <input aria-label="Ask us anything" />
+                    <span className="placeholder">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Exercitationem, consequatur?
+                    </span>{" "}
+                  </div>
+                </div>
+                <div className="hidden md:block mt-28">
+                  <Link
+                    href="#"
+                    className="btn btn1 text-white  border-white px-14 py-4 rounded-md border-2 text-lg z-10"
+                  >
+                    Benjamin
+                  </Link>
+                </div>
 
-              <div className="autoplay-progress" slot="container-end">
-                <svg viewBox="0 0 0 0" ref={progressCircle}>
-                  <circle cx="0" cy="0" r="0"></circle>
-                </svg>
-                <span ref={progressContent}></span>
+                <div className="middle mt-[300px] cursor-pointer">
+                  <div className=" mouse mt-14 ml-10 hidden md:block"></div>
+                </div>
               </div>
-            </Swiper>
+            </div>
+            <div className=" mt-20 flex flex-col justify-center items-center md:hidden ">
+              <Image
+                src={image1}
+                alt="image"
+                className=" rounded-full w-[200px]"
+              />
+              <div className="middle mt-[200px] cursor-pointer">
+                <div className=" mouse mt-[500px]  md:mt-96 ml-10 "></div>
+              </div>
+              <div className=" mt-20 ">
+                <Link
+                  href="#"
+                  className="btn btn1 text-white  border-white px-24 py-4 rounded-md border-2 text-lg z-10"
+                >
+                  Benjamin
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 

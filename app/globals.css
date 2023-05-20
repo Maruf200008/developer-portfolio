@@ -2,23 +2,165 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: #43d9ad;
-}
-
-.swiper-pagination-bullet-active {
-  background: #43d9ad;
-}
-.autoplay-progress > span {
-  display: none;
-}
-
 .btn {
-  box-shadow: inset 0 0 0 0 #080808;
-  transition: ease-out 0.4s;
+  transition: color 0.4s linear;
+  position: relative;
 }
 .btn:hover {
-  box-shadow: inset 300px 0 0 0 #080808;
+  color: #1d1d1d;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.btn1::before {
+  transform: scaleX(0);
+}
+
+.btn1:hover::before {
+  transform: scaleX(1);
+}
+
+.prosjekterBtn {
+  transition: color 0.4s linear;
+  position: relative;
+}
+.prosjekterBtn:hover {
   color: #fff;
+}
+.prosjekterBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e0e0e;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.prosjekterBtn1::before {
+  transform: scaleX(0);
+}
+
+.prosjekterBtn1:hover::before {
+  transform: scaleX(1);
+}
+
+.demoBtn {
+  transition: color 0.4s linear;
+  position: relative;
+}
+.demoBtn:hover {
+  color: #0e0e0e;
+}
+.demoBtn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #43d9ad;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+.demoBtn1::before {
+  transform: scaleX(0);
+}
+
+.demoBtn1:hover::before {
+  transform: scaleX(1);
+}
+
+/* mouse animation */
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mouse {
+  width: 60px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 60px;
+  background: #61616191;
+  position: relative;
+}
+.mouse::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 30px;
+  background: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 70px;
+  }
+}
+
+/* text animation  */
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 50%;
+  > input,
+  > .placeholder {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    pointer-events: none;
+    @include typed(
+      "How many roads must a man walk down before you call him a man?",
+      "How many seas must a white dove sail before she sleeps in the sand?",
+      "The answer, my friend, is blowin' in the wind",
+      1.5,
+      (
+        caret-width: 2px,
+        caret-space: 2px,
+      )
+    );
+  }
+  > input {
+    &:focus,
+    &:active {
+      + .placeholder {
+        display: none;
+      }
+    }
+  }
 }

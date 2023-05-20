@@ -20,11 +20,31 @@ const Navbar = () => {
             <h2 className=" text-2xl">James Dasher</h2>
           </Link>
           <div className=" z-20">
-            <ul className=" flex gap-x-5">
-              <Link href="#">About</Link>
-              <Link href="#">Project</Link>
-              <Link href="#">Contact</Link>
-              <Link href="#">CV</Link>
+            <ul className=" flex gap-x-10 text-lg">
+              <Link
+                href="#"
+                className=" hover:text-primary hover:underline transition"
+              >
+                About
+              </Link>
+              <Link
+                className=" hover:text-primary hover:underline transition"
+                href="#"
+              >
+                Project
+              </Link>
+              <Link
+                className=" hover:text-primary hover:underline transition"
+                href="#"
+              >
+                Contact
+              </Link>
+              <Link
+                className=" hover:text-primary hover:underline transition"
+                href="#"
+              >
+                CV
+              </Link>
             </ul>
           </div>
         </div>
